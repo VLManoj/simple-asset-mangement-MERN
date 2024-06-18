@@ -2,19 +2,20 @@
 FROM node:14
 
 # Set working directory
-WORKDIR /app/client
+WORKDIR /app/server
 
 # Copy package.json and package-lock.json
-COPY ./client/package*.json ./
+COPY ./server/package*.json ./
 
 # Install dependencies
 RUN npm install
 
-# Copy the rest of the client app code
-COPY ./client/ .
+# Copy the rest of the server app code
+COPY ./server/ .
 
-# Expose port 3000 (default create-react-app port)
-EXPOSE 3000
+# Expose port 5000 (or the port your Node.js server runs on)
+EXPOSE 5000
 
-# Command to run the React application
+# Command to run the Node.js server
 CMD ["npm", "start"]
+
