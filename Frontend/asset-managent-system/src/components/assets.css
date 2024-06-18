@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Button styles */
+.btn-primary {
+    background-color: #e68b0c;
+    color: #fff;
+    border-color: #ff3c00;
+}
+
+.btn-primary:hover {
+    background-color: #d99400;
+    border-color: #cc6d00;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+    border-color: #dc3545;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+}

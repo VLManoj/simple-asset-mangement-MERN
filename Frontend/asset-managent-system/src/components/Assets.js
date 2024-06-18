@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { NavLink } from 'react-router-dom';
+import './assets.css'; // Import the CSS file
 
 export default function Assets() {
     const [assetData, setAssetData] = useState([]);
@@ -121,7 +122,7 @@ export default function Assets() {
                                         <td>{element.AssetCategory}</td>
                                         <td>{element.AssetDepreciationPercent}</td>
                                         <td>{element.AssetManufacturingDate}</td>
-                                        <td>${calculateDepreciatedValue(element)}</td>
+                                        <td>₹{calculateDepreciatedValue(element)}</td>
                                         <td>
                                             <NavLink to={`/updateasset/${element._id}`} className="btn btn-primary">
                                                 <i className="fa-solid fa-pen-to-square"></i>
